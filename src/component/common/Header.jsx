@@ -1,6 +1,7 @@
 import React from 'react'
 import Topbar from '../layout/Topbar'
 import Navbar from './Navbar'
+import Hero from '../layout/Hero'
 
 const Header = () => {
     return (
@@ -9,6 +10,8 @@ const Header = () => {
             <Topbar />
             {/*navbar*/}
             <Navbar />
+            {/* Hero */}
+            {/* <Hero /> */}
         </header>
     )
 }
