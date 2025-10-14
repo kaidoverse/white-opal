@@ -1,14 +1,25 @@
-function App() {
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import UserLayout from './component/layout/UserLayout'
+import About from './pages/About'
+import Contact from './pages/Contact'
+
+// import { Toaster } from "sonner"
+
+
+const App = () => {
   return (
-
-    <div className='container mx-auto flex  justify-between items-center py-3 px-6'>
-      <h1>hi</h1>
+    <div className='w-full overflow-x-hidden'>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<UserLayout />}>
+            <Route path='about' element={<About />} />
+            <Route path='contact' element={<Contact />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </div>
-
-  );
+  )
 }
 
-export default App;
-
-
-
+export default App
