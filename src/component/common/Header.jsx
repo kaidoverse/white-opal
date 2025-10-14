@@ -10,8 +10,7 @@ const Header = () => {
             <Topbar />
             {/*navbar*/}
             <Navbar />
-            {/* Hero */}
-            {/* <Hero /> */}
+
         </header>
     )
 }
