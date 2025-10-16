@@ -25,16 +25,20 @@ const Navbar = () => {
 
                 {/* Right — Nav Links */}
                 <div className="hidden md:flex space-x-8 text-gray-700 font-medium">
-                    <Link to="/" className="hover:text-indigo-600 transition-colors">
+                    <Link to="/" className="hover:text-[#374552] transition-colors">
                         Home
                     </Link>
-                    <Link to="/about" className="hover:text-indigo-600 transition-colors">
+                    <Link to="/about" className="hover:text-[#374552] transition-colors">
                         About
                     </Link>
-                    <Link to="/contact" className="hover:text-indigo-600 transition-colors">
+                    <Link to="/services" className="hover:text-[#374552] transition-colors">
+                        Our Services
+                    </Link>
+                    <Link to="/contact" className="hover:text-[#374552] transition-colors">
                         Contact
                     </Link>
                 </div>
+
 
                 {/* Mobile Menu Button */}
                 <button onClick={toggleNavDrawer} className="md:hidden">
@@ -69,6 +73,13 @@ const Navbar = () => {
                             className="block text-gray-600 hover:text-indigo-600"
                         >
                             About
+                        </Link>
+                        <Link
+                            to="/services"
+                            onClick={toggleNavDrawer}
+                            className="block text-gray-600 hover:text-indigo-600"
+                        >
+                            Our Services
                         </Link>
                         <Link
                             to="/contact"

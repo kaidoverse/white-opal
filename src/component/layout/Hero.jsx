@@ -6,6 +6,7 @@ const Hero = () => {
     return (
         <section className="flex flex-col md:flex-row w-full min-h-screen bg-[#E6F3FA]">
             {/* Left — Image Section */}
+
             <div className="w-full md:w-1/2 h-[300px] sm:h-[400px] md:h-auto">
                 <img
                     src={modern}
@@ -15,7 +16,9 @@ const Hero = () => {
             </div>
 
             {/* Right — Text Section */}
+
             <div className="w-full md:w-1/2 flex flex-col justify-center items-center md:items-start px-6 sm:px-10 md:px-12 lg:px-16 py-10 text-center md:text-left">
+
                 <h1 className="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-bold text-[#1A3C57] mb-4 leading-snug md:leading-tight">
                     Reliable Procurement <br className="hidden sm:block" /> for Modern Businesses
                 </h1>
